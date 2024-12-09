@@ -1,0 +1,180 @@
+
+
+.episodeTime-title{
+background-color: #ffffff;
+color: black;
+margin-top: 90px;
+}
+
+.week-days .name-days{
+    text-align: -webkit-right;
+    margin: 20px 5px;
+    min-height: 300px;
+}
+
+.week-days .day{
+    background-color: white;
+    width: 100px;
+    
+padding: 4px 0;
+font-size: 20px;
+border-radius: 10px;
+text-align: center;
+}
+
+.day-cards{
+    display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px 0;
+justify-content: flex-end;
+margin: 15px 0px;
+}
+
+
+
+
+
+
+.EpisodeTime-container{
+    position: relative;
+}
+
+
+.EpisodeTime-container .state{
+    position: absolute;
+    right: 0;
+    z-index: 996;
+    background: #00000099;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius:0 8px 0 7px;
+    -webkit-border-radius:0 8px 0 7px;
+    -moz-border-radius:0 8px 0 7px;
+    -ms-border-radius:0 8px 0 7px;
+    -o-border-radius:0 8px 0 7px;
+}
+
+.EpisodeTime-container .state span {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    display: block;
+    border-radius: 50%;
+    animation: stateColor 0.5s ease-in-out infinite alternate;
+    -webkit-animation: stateColor 0.5s ease-in-out infinite alternate;
+}
+
+.slider-card{
+    position: relative;
+    padding: 0 10px;
+}
+
+
+.EpisodeTime-container .slider-img{
+    width: 240px;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+
+}
+
+.EpisodeTime-container .slider-card .filter-top{
+    position: absolute;
+    z-index: 555;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #000000bf;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.EpisodeTime-container .slider-img:hover .filter-top{
+    opacity: 1;
+}
+
+.EpisodeTime-container .flag{
+    position: absolute;
+    z-index: 577;
+    left: 5px;
+    top: 5px;
+    width: 32px;
+    height: 21px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+}
+
+.EpisodeTime-container .Top-icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 577;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+@media (max-width:675px){
+    .day-cards{
+        display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 0;
+    justify-content: center;
+    margin: 15px 0px;
+    }
+
+    .EpisodeTime-container .slider-img {
+        width: 160px;
+        height: 200px;
+    }
+
+    .EpisodeTime-container .slider-card .filter-top {
+        font-size: 18px;
+    }
+    
+}
+@media (max-width:320px){
+
+    .EpisodeTime-container .slider-img {
+        width: 125px;
+        height: 154px;
+    }
+
+    .EpisodeTime-container .slider-card .filter-top {
+        font-size: 18px;
+    }
+    
+}

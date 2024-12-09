@@ -1,0 +1,318 @@
+:root{
+  --background:#16151d;
+  --background-header1:#4F00E4  ; 
+  --background-header2:#9244f0;
+  --color1: #ffff;
+  --color2:rgb(255, 255, 255) ;
+  --color3:#4F00E4 ;
+  --color4:#00CBFF ;
+  --black:#16151d;
+  /* sideBar */
+  --sideBar:#3a3a3a40;
+  /* scrollbar */
+  --scrollbar-hover:#09796eb2;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background-image: url('../src/imgs/maxresdefault.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  background-color: var(--background);
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+body::before{
+  content: "";
+  position: fixed;
+  z-index: -50;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #16151dcc;
+}
+/* ::selection{
+  background-color: var(--green);
+} */
+
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color3);
+}
+
+
+
+
+
+
+
+
+/* header */
+
+.header{
+  background: var(--background-header1);
+  background: linear-gradient(131deg, var(--background-header1) 0%, var(--background-header2) 55%);
+
+}
+
+/* footer */
+.footer{
+  background: var(--background-header1);
+  background: linear-gradient(131deg, var(--background-header1) 0%, var(--background-header2) 55%);
+
+}
+
+
+.header .logo .name{
+  color: var(--color1);
+}
+
+.links ul li a{
+  color: var(--color2);
+}
+
+.links ul li a:hover{
+  color:var(--black);
+}
+
+
+.Surprised-me{
+  background-color: var(--color2);
+}
+
+.Surprised-me span{
+  color: var(--color3);
+}
+
+.Surprised-me:hover{
+  background-color: var(--black);
+  color: var(--color1);
+}
+
+.icon{
+  color: var(--color1);
+}
+
+
+.icon:hover{
+  color: var(--black);
+}
+
+
+/* sideBar */
+.sideBar{
+  background-color: var(--sideBar);
+}
+
+.sign-button a{
+  color: var(--black);
+}
+
+.sign-button div{
+  background-color: var(--color2);
+  color: var(--black);
+}
+
+
+
+.sign-button div:hover{
+  background-color: var(--black);
+  color: var(--color1);
+}
+
+.sign-button div:hover a{
+  color: var(--color1);
+}
+
+
+
+.sideBar .links ul li:hover{
+  background-color: var(--black);
+  width: 100%;
+}
+
+
+.sideBar .links ul li a{
+
+  color: var(--color1);
+}
+
+
+/* Search */
+.parent-Search{
+  background-color: var(--black);
+}
+
+
+
+/* pageAnime */
+
+.row-5 a{
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+
+.episodes-btn a{
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+
+.episodes .episodes-name {
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+
+.episodes-comments  .title{
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+
+
+/* PageEpisodes */
+
+.title-episodes .title-name {
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+.Servers .Servers-name {
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+.Download .Download-name {
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+.Download .Download-card h3 {
+  background-color: var(--color1);
+}
+.video-comments .title {
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+
+
+/* slider */
+.container .start{
+
+  border-left: 5px solid var(--color2);
+  border-top: 5px solid var(--color2);
+}
+.container .end{
+
+  border-right: 5px solid var(--color2);
+  border-bottom: 5px solid var(--color2);
+}
+
+
+
+/* topCommon */
+
+
+.slider-container .start{
+
+  border-right: 5px solid var(--color2);
+  border-top: 5px solid var(--color2);
+}
+.slider-container .end{
+
+  border-left: 5px solid var(--color2);
+  border-bottom: 5px solid var(--color2);
+}
+
+.slick-prev:before, .slick-next:before {
+  color: var(--color2) !important;
+  opacity: 1 !important;
+}
+
+
+/* RecentlyCard*/
+
+.recently-container .start{
+
+  border-right: 5px solid var(--color2);
+  border-top: 5px solid var(--color2);
+}
+.recently-container .end{
+
+  border-left: 5px solid var(--color2);
+  border-bottom: 5px solid var(--color2);
+}
+
+
+.more{
+background-color: var(--color2);
+color: var(--white);
+}
+
+
+
+
+
+/* Favorite*/
+
+.Favorite-container  .start{
+
+  border-right: 5px solid var(--color2);
+  border-top: 5px solid var(--color2);
+}
+.Favorite-container  .end{
+
+  border-left: 5px solid var(--color2);
+  border-bottom: 5px solid var(--color2);
+}
+
+
+
+/* myList */
+
+.list-button a{
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+
+.list-button a.active {
+  color: var(--black);
+  background-image: linear-gradient(45deg,var(--color1),var(--color1));
+
+}
+
+
+/* search */
+.card-output:hover{
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+}
+
+
+/* AnimeList */
+.submit button{
+  background-image: linear-gradient(45deg,var(--color3),var(--background-header2));
+  color: white;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.submit button:hover{
+  background-image: linear-gradient(45deg,var(--color1),var(--color1));
+  color: var(--black);
+  }

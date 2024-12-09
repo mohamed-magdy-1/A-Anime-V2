@@ -1,0 +1,108 @@
+.myList-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 110px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.myList-container  .recently-img{
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+
+}
+
+
+
+.myList-container .slider-card .filter-top{
+    position: absolute;
+    z-index: 555;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #000000bf;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.myList-container .slider-img:hover .filter-top{
+    opacity: 1;
+}
+
+
+
+
+.my-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.list-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.list-button a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 36px;
+    padding: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+/* .list-button a.active in index.css */
+
+
+
+@media (max-width:430px){}
+@media (max-width:320px){
+
+.list-button a {
+    width: 142px;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+}

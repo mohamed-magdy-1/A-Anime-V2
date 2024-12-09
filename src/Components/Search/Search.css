@@ -1,0 +1,147 @@
+
+.parent-Search{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid white;
+    padding: 7px 8px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.input-Search{
+    font-family: "Cairo", sans-serif;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(22, 21, 29, 1);
+    font-size: 15px;
+
+}
+
+
+.icon-Search{
+    color: white;
+    padding-right: 8px;
+}
+
+
+
+
+
+/* Search-anime-cards */
+
+
+.Search-anime-cards{
+    position: absolute;
+    display: none;
+    top: 80px;
+    width: 330px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(22, 21, 29, 1);
+    overflow-y: auto;
+}
+
+
+.card-output{
+    text-decoration: none;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    padding: 0 23px 0 0;
+    background-color: rgba(22, 21, 29, 1);
+}
+/* card-output:hover index.css */
+
+
+.card-output .img-Search{
+    max-width: 50px;
+    min-height: 100%;
+    width: 50px;
+    display: flex;
+}
+
+.card-output .img-Search img{
+    width: 100%;
+    border-radius: 5px 0 0 0;
+}
+
+.content-Search{
+    width: 75%;
+}
+
+.content-Search .title{
+color: white;
+text-transform: capitalize;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.content-Search .more-content{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+width: 100%;
+}
+
+.more-content .star{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 4px;
+}
+
+
+.none-cards{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 31%;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (max-width:1000px){
+    .parent-Search{
+        width: 33px;
+    }
+.events-parent-Search{
+    width: 240px;
+}
+
+.icon-Search{
+cursor: pointer;
+}
+}
+
+
+@media (max-width:675px){
+
+    .parent-Search{
+        margin-right: 20px;
+    }
+
+    .Search-anime-cards {
+        width: 100%;
+        left: 0px;
+    }
+    
+    }

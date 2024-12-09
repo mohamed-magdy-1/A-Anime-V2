@@ -1,0 +1,120 @@
+
+
+.sideBar{
+    margin-top: 10px;
+    position: fixed;
+    z-index: 666;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 6px 0 0 0;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+
+.sign{
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.sign-img{
+    display: flex;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.sign-img img{
+    width: 90px;
+}
+
+.sign-button {
+    margin-top: 10px;
+    display: flex;
+}
+
+.sign-button div{
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 8px;
+    padding: 0 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: "Cairo", sans-serif;
+    transition:0.3s ease-in-out ;
+    -webkit-transition:0.3s ease-in-out ;
+    -moz-transition:0.3s ease-in-out ;
+    -ms-transition:0.3s ease-in-out ;
+    -o-transition:0.3s ease-in-out ;
+}
+/* sign-button button hover in index.css */
+
+
+.sign-button a{
+text-decoration: none;
+}
+
+
+.sideBar .links ul{
+    display: flex;
+    flex-direction: column;
+}
+.sideBar .links ul li{
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+/* sideBar .links ul li:hover hover in index.css */
+
+
+.sideBar .links ul li a{
+    width: 100%;
+    font-size: 30px;
+}
+
+.sideBar .links ul.ul-675px{
+    display: none;
+}
+
+.icon-menu{
+    position: absolute;
+    top: 32%;
+    left: 15px;
+}
+
+
+@media (max-width:675px){
+
+    .sideBar .links ul.ul-675px{
+        display: flex;
+    }
+
+
+
+}

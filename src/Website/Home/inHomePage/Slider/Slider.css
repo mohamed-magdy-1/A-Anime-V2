@@ -1,0 +1,420 @@
+
+
+
+.Slider-card .container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    padding: 15px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.container .start{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* .container .start border in index.css */
+
+
+.container .end{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* .container .end border in index.css */
+
+
+
+
+.container .Choose{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .Choose::-webkit-scrollbar{
+    height: 5px;
+}
+
+.container .Choose .all-card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+.container .Choose .card-slider{
+    width: 315px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.container .Choose .card-slider .img{
+    width: 100%;
+    height: 185px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+.container .main-card{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+
+.content{
+    position: absolute;
+    top: 0;
+    padding: 10px 0;
+    height: 100%;
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+.content .name{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding: 0 29px;
+    /* position: relative;
+    bottom: -142px; */
+}
+
+.content .name span{
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: white;
+    position: relative;
+}
+
+
+
+
+.content .name span::before{
+    content: "";
+    top: -9px;
+    left: 50%;
+    border: 5px solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+
+}
+
+
+.content .information{
+    margin-right: 15px;
+    /* position: relative;
+    bottom: -146px; */
+    background: #00000094;
+    border-radius: 5px;
+    width: 600px;
+    color: white;
+    direction: rtl;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.content .p_{
+    position: relative;
+    width: 88px;
+    height: 3px;
+    background-color: black;
+}
+
+.content .p_::before{
+    content: "";
+    top: -9px;
+    left: 46%;
+    border: 5px solid;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+
+}
+
+.content .rate{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .state{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    top: 0px;
+    right: 12px;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.content .state span{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    display: block;
+    border-radius: 50%;
+    animation: stateColor 0.5s ease-in-out infinite alternate;
+    -webkit-animation: stateColor 0.5s ease-in-out infinite alternate;
+}
+
+
+
+
+@keyframes stateColor {
+    from {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.content .category{
+    position: relative;
+    width: 500px;
+    z-index: 555;
+    right: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.content .category span{
+    border: 1px solid white;
+    padding: 3px 33px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.content .category span:hover{
+    background-color: #9144f084;
+}
+
+
+
+.container .main-card .big-card{
+    width: 100%;
+    height: 600px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+
+
+.filter-more{
+    letter-spacing: 1px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -185px;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    background: #000000c6;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+
+
+.filter{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #00000041;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+
+
+@media (max-width:980px){
+
+
+.content{
+    gap: 20px;
+    bottom: 0;
+    padding: 10px 5px;
+    justify-content: space-between;
+}
+
+
+
+    .content .name {
+        width: 100%;
+        padding-top: 320px;
+        font-size: 20px;
+    }
+    
+    .content .information {
+        width: 100%;
+        padding: 4px;
+        margin: 0;
+    }
+
+    .content .category {
+        width: 100%;
+        right: 11px;
+        gap: 6px;
+        justify-content: center;
+    }
+
+
+.content .category span {
+    padding: 3px 5px;
+}
+
+}
+
+@media (max-width:850px){
+
+
+
+    .container .start{
+    display: none;
+    }
+    .container .end{
+    display: none;
+    }
+    
+    
+    }
+
+
+@media (max-width:675px){
+.container{
+flex-direction: column-reverse;
+
+
+}
+.container .main-card .big-card {
+width: 100%;
+height: 600px;
+}
+
+
+
+.container .main-card{
+position: relative;
+padding-top: 25px;
+}
+
+
+
+.container .Choose .all-card {
+    flex-direction: row;
+}
+
+.container .Choose {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 55;
+    overflow-x: scroll;
+    align-items: flex-start;
+    
+}
+
+.content .rate {
+    top: 13px;
+}
+
+
+.content .state {
+    top: 30px;
+}
+
+
+.content .category {
+    right: 0px;
+}
+
+
+
+}
+

@@ -1,0 +1,243 @@
+
+.top-common{
+    margin-top: 250px;
+
+
+}
+
+
+.slider-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.slider-list{
+    width: 100%;
+
+}
+
+.slider-container .state{
+    position: absolute;
+    right: 0;
+    z-index: 996;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius:0 8px 0 7px;
+    -webkit-border-radius:0 8px 0 7px;
+    -moz-border-radius:0 8px 0 7px;
+    -ms-border-radius:0 8px 0 7px;
+    -o-border-radius:0 8px 0 7px;
+}
+
+.slider-container .state span {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    display: block;
+    border-radius: 50%;
+    animation: stateColor 0.5s ease-in-out infinite alternate;
+    -webkit-animation: stateColor 0.5s ease-in-out infinite alternate;
+}
+
+.slider-card{
+    padding: 0 10px;
+}
+
+
+
+.slider-container .slider-img{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+
+}
+
+.filter-top{
+    position: absolute;
+    z-index: 555;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bf;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.slider-container .slider-img:hover .filter-top{
+    opacity: 1;
+}
+
+.flag{
+    position: absolute;
+    z-index: 577;
+    left: 5px;
+    top: 5px;
+    width: 29px;
+    height: 20px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+}
+
+.Top-icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 577;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+.slider-container .start{
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* .slider-container .start border in index.css */
+
+
+.slider-container .end{
+    position: absolute;
+    bottom: -10px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* .slider-container .end border in index.css */
+
+
+.slick-prev,.slick-next{
+    position: absolute !important;
+}
+
+/* .slick-prev:before, .slick-next:before color in index.css */
+
+
+.slick-prev{
+    right: 88px !important;
+    left: unset !important;
+    z-index: 998 !important;
+    top: -16px;
+}
+.slick-next{
+    left: 88px !important;
+    bottom: -30px !important;
+    top: unset !important;
+    z-index: 997;
+}
+.main-title{
+    color: white;
+    font-size: 55px;
+    position: absolute;
+    top: -116px;
+    right: 2px;
+}
+
+
+
+
+    
+    
+    @media (max-width:675px){
+
+        .slider-container {
+            padding: 0 17px;
+        }
+
+        .recently-container .recently-img {
+            width: 170px !important;
+            height: 225px !important;
+        }
+
+
+        .slider-container .start {
+            top: -16px;
+            right: 10px;
+        }
+        .slider-container .end {
+            bottom:-16px;
+            left: 10px;
+        }
+
+        .slick-prev {
+            top: -12px;
+        }
+
+        .slick-next {
+            bottom: -36px !important;
+        }
+
+        .main-title{
+            top: -111px;
+            right: 9px;
+        }
+
+    
+    }
+    
+    
+
+    @media (max-width:400px){
+        .recently-container .recently-img {
+            width: 150px !important;
+            height: 220px !important;
+        }
+    }
+    @media (max-width:330px){
+        .recently-container .recently-img {
+            width: 122px !important;
+            height: 170px !important;
+        
+        }
+    }

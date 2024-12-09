@@ -1,0 +1,96 @@
+
+.footer{
+    position: relative;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.end-footer{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5px;
+
+
+}
+
+.end-footer .made {
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.heart-footer{
+    color: red;
+    position: relative;
+    top: 6px;
+    left: -2px;
+    font-size: 25px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact span{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+    background-color: #16151d;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.contact span:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+.end-footer .made  a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+.end-footer .made  a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.Copy{
+    color: white;
+    direction: rtl;
+    padding-right: 10px;
+}
+
+
+@media (max-width:675px){
+
+    .end-footer{
+    flex-direction: column;
+    }
+    
+    
+    }

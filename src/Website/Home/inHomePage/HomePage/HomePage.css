@@ -1,0 +1,28 @@
+
+@media (min-width: 1600px) {
+    .main-container {
+    margin:  0 auto;
+    width: 1510px;
+    }
+
+    .header {
+        left: 0;
+        justify-content: space-around;
+    }
+
+    .top-common {
+        padding-bottom: 30px;
+    }
+
+
+    .end-footer{
+        justify-content: space-around;
+    
+    }
+
+    .footer {
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+}

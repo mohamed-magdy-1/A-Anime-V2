@@ -1,0 +1,164 @@
+
+/* there are  classes also  in RecentlyCards.css  */
+
+
+.Favorite-container{
+    width: 100%;
+    min-height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 195px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+.Favorite-container .state{
+    position: absolute;
+    right: 0;
+    z-index: 996;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    border-radius:0 8px 0 7px;
+    -webkit-border-radius:0 8px 0 7px;
+    -moz-border-radius:0 8px 0 7px;
+    -ms-border-radius:0 8px 0 7px;
+    -o-border-radius:0 8px 0 7px;
+}
+
+.Favorite-container  .state span {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    display: block;
+    border-radius: 50%;
+    animation: stateColor 0.5s ease-in-out infinite alternate;
+    -webkit-animation: stateColor 0.5s ease-in-out infinite alternate;
+}
+
+.slider-card{
+    position: relative;
+    margin: 10px;
+}
+
+
+.Favorite-container  .slider-img{
+    width: 240px;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
+
+}
+
+.Favorite-container .slider-card .filter-top{
+    position: absolute;
+    z-index: 555;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #000000bf;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.Favorite-container .slider-img:hover .filter-top{
+    opacity: 1;
+}
+
+.Favorite-container  .flag{
+    position: absolute;
+    z-index: 577;
+    left: 5px;
+    top: 5px;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+}
+
+.Favorite-container  .Top-icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 577;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (max-width:675px){
+    .Favorite-container  .slider-img {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+
+
+
+
+.Favorite-container .start{
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* .Favorite-container .start border in index.css */
+
+
+.Favorite-container .end{
+    position: absolute;
+    bottom: -10px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* .Favorite-container .end border in index.css */

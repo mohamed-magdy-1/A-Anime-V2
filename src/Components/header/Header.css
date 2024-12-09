@@ -1,0 +1,154 @@
+
+.Headroom-header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .name{
+    width: 0px;
+    position: relative;
+    right: 15px;
+    letter-spacing: 3px;
+    font-size: 31px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.logo:hover .name{
+    width: 120px;
+}
+
+
+.logo .img-logo{
+    width: 100px;
+}
+
+
+
+.links{
+    height: 40px;
+}
+
+.links ul{
+display: flex;
+list-style: none;
+align-items: center;
+}
+
+
+.links ul li{
+    padding: 0 15px;
+}
+
+
+.links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+/* links ul li a hover in index.css */
+
+
+
+
+
+.Surprised-me{
+
+    margin: 0 11px 0 0;
+    border-radius: 10px;
+}
+
+.Surprised-me span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.Surprised-me span .random{
+    margin-top: 3px;
+
+}
+
+/* Surprised-me hover in index.css */
+
+
+.icon{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+/* icon hover in index.css */
+
+
+
+
+
+@media (max-width:1000px){
+    .parent-Search{
+        width: 33px;
+    }
+.events-parent-Search{
+    width: 240px;
+}
+
+.icon-Search{
+cursor: pointer;
+}
+
+
+.links ul li{
+    padding: 0 10px;
+}
+
+
+.links ul li a{
+    font-size: 17px;
+
+}
+
+
+}
+
+
+
+
+
+@media (max-width:675px){
+
+.header .links ul li{
+display: none;
+}
+
+
+}

@@ -1,0 +1,434 @@
+
+.container-video{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.title-episodes {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 130px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #222222;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.title-episodes .title-name {
+    color: white;
+    font-size: 20px;
+    background-color: #09796e;
+    text-align: end;
+    padding: 3px 10px;
+}
+.title-episodes .title-name h1{
+    text-align: center;
+}
+.Servers {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #222222;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.Servers .Servers-name {
+    color: white;
+    font-size: 20px;
+    text-align: end;
+    padding: 3px 10px;
+}
+
+.Links-Servers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+    background-color: #16151d;
+}
+
+
+
+.Links-Servers a {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding: 30px 91px;
+    background-color: #000;
+    width: 150px;
+    height: 50px;
+    border:1px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+.Links-Servers a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.Links-Servers a img{
+width: 150px;
+}
+
+
+
+
+
+
+
+
+
+.Download {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #222222;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.Download .Download-name {
+    color: white;
+    font-size: 20px;
+    text-align: end;
+    padding: 3px 10px;
+    border: 1px solid #222222;
+}
+
+
+.Download-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #16151d;
+}
+
+.Download-card .SD,.HD,.FHD,.Link-4K{
+    width: 50%;
+    border: 1px solid #222222 ;
+}
+
+
+.Download .Download-card h3 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    text-align: end;
+    padding: 3px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+.Links-Download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+
+.Links-Download a {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 30px 91px;
+    background-color: #000;
+    width: 150px;
+    height: 50px;
+    border:1px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+.Links-Download a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.Links-Download a{
+text-decoration: none;
+color: white;
+}
+.Links-Download a img{
+width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+.content-video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.video {
+    width: 85%;
+    height: 575px;
+}
+
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.content-video  .episodes-search {
+justify-content: center;
+}
+.content-video  .episodes-search input {
+    color: #ccc;
+    background-color: #343434;
+    width: 99%;
+    margin-top: 5px;
+    padding: 20px;
+    border: none;
+    direction: rtl;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+
+
+.content-video  .episodes-card {
+    display: flex;
+    width: 99%;
+    height: 310px;
+    overflow-y: auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+
+.content-video .episodes {
+    width: 85%;
+    margin: 0 !important;
+    height: 434px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #16151d;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+.content-video .episodes-card a {
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 5px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.video-comments {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #222222;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.video-comments .title {
+    color: white;
+    font-size: 20px;
+    text-align: end;
+    padding: 3px 10px;
+}
+
+.video-comments .content-comments {
+    color: white;
+    font-size: 21px;
+    padding: 20px;
+    background-color: #16151d;
+}
+
+
+
+@media (max-width:1100px){
+    .video {
+        height: 435px;
+    }
+
+}
+@media (max-width:900px){
+    .video {
+        height: 370px;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .Links-Servers a {
+        padding: 24px 57px;
+    }
+
+    .Links-Download a img {
+        width: 100px;
+    }
+    .Links-Download a {
+        padding: 24px 57px;
+    }
+}
+
+@media (max-width:430px){
+    .video {
+    height: 262px;
+}
+
+.container-video {
+    width: 100%;
+
+}
+
+.title-episodes {
+    width: 90%;
+}
+
+.Servers {
+    width: 90%;
+}
+
+.Links-Servers a {
+    padding: 30px 73px;
+    width: 100px;
+}
+
+
+.Links-Servers a img {
+    padding: 27px 25px;
+}
+
+.video iframe {
+    width: 90%;
+}
+
+.content-video .episodes {
+    height: 90px;
+    height: 378px;
+}
+
+.Download {
+    width: 90%;
+}
+
+
+.video-comments {
+    width: 90%;
+}
+
+
+
+.title-episodes .title-name h1 {
+    text-align: center;
+    font-size: 20px;
+}
+.Links-Download a img {
+    width: 100px;
+}
+.Links-Download a {
+    padding: 24px 57px;
+}
+
+}
+
+@media (max-width:300px){
+    .Links-Download a img {
+        width: 80px;
+    }
+    .Links-Download a {
+        padding: 24px 20px;
+    }
+}
